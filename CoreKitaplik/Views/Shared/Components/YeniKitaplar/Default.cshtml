@@ -1,0 +1,25 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model IEnumerable<CoreKitaplik.Models.Kitaplar>
+
+
+<table class ="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Ad</th>
+        <th>Yazar</th>
+    </tr>
+    @foreach(var x in Model)
+    {
+        <tr>
+            <td>@x.Id</td>
+            <td>@x.KitapAd</td>
+            <td>@x.Yazar</td>
+        </tr>
+    }
+
+</table>
+<div>deneme</div>
